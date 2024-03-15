@@ -1,4 +1,5 @@
 /* Reset de Estilos para una mejor consistencia entre navegadores */
+/* Establece el margen y el relleno de los elementos body, h1, h2, p y ul a 0 */
 body,
 h1,
 h2,
@@ -10,45 +11,51 @@ ul {
 
 /* Estilos Generales */
 body {
-  padding-top: 140px; /* Añadir espacio arriba igual a la altura del encabezado y la barra de navegación */
-  font-family: "Open Sans", sans-serif;
-  line-height: 1.6;
-  color: #333;
+  padding-top: 140px; /* Espacio superior igual a la altura del encabezado */
+  font-family: "Open Sans", sans-serif; /* Tipo de fuente */
+  line-height: 1.6; /* Altura de línea */
+  color: #333; /* Color de texto */
+  background-color: #f5f5f5; /* Color de fondo */
 }
 
 /* Encabezado */
 header {
   position: fixed; /* Fijar el encabezado */
-  top: 0; /* Alinearlo en la parte superior */
-  left: 0; /* Alinearlo en el extremo izquierdo */
+  top: 0; /* Alinear en la parte superior */
+  left: 0; /* Alinear en el extremo izquierdo */
   width: 100%; /* Ancho completo */
-  background-color: #4caf50; /* Color de fondo verde oscuro */
-  color: #fff; /* Texto blanco */
+  /* Fondo con degradado */
+  background-image: linear-gradient(to right, #aac5d9, #456f92);
+  color: #fff; /* Color de texto */
   padding: 20px; /* Espaciado interno */
-  text-align: center;
+  text-align: center; /* Alineación de texto */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
+
 header h1 {
-  font-size: 2em; /* Tamaño de fuente más grande para el título principal */
-  transition: font-size 0.3s; /* Transición suave de tamaño de fuente */
+  font-size: 2em; /* Tamaño de fuente */
+  transition: font-size 0.3s; /* Transición suave para cambio de tamaño de fuente */
 }
 
 /* Efecto hover para el h1 dentro del header */
 header h1:hover {
-  font-size: 2.2em; /* Cambia el tamaño de fuente en hover */
+  font-size: 2.2em; /* Cambio de tamaño de fuente en hover */
+  color: #d8d8d8; /* Cambio de color de texto en hover */
 }
 
 /* Navegación */
 nav {
   position: fixed; /* Fijar la barra de navegación */
-  top: 91px; /* Alinearla debajo del encabezado */
-  left: 0; /* Alinearla en el extremo izquierdo */
+  top: 91px; /* Alinear debajo del encabezado */
+  left: 0; /* Alinear en el extremo izquierdo */
   width: 100%; /* Ancho completo */
-  background-color: #333; /* Color de fondo negro */
+  background-color: #333; /* Color de fondo */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 ul {
-  list-style: none; /* Quita los puntos de la lista */
-  padding: 10px; /* Espaciado interno de la lista */
+  list-style: none; /* Quitar viñetas de la lista */
+  padding: 10px; /* Espaciado interno */
 }
 
 /* Estilos para los enlaces dentro de los elementos li en el nav */
@@ -57,82 +64,84 @@ nav ul li {
 }
 
 nav ul li a {
-  display: block; /* Convertir enlace en bloque para ocupar todo el espacio del li */
-  padding: 10px; /* Añadir relleno alrededor del enlace */
-  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
-  color: #fff; /* Color del texto */
+  padding: 10px; /* Espaciado */
+  text-decoration: none; /* Quitar subrayado */
+  color: #fff; /* Color de texto */
+  font-weight: bold; /* Negrita */
+  transition: background-color 0.3s, color 0.3s; /* Transiciones suaves */
 }
 
-/* Estilos cuando el mouse pasa sobre un enlace */
+/* Estilos hover para los enlaces */
 nav ul li a:hover {
-  background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+  background-color: #555; /* Cambio de color de fondo en hover */
 }
 
-/* Estilos cuando se hace clic en un enlace */
+/* Estilos clic para los enlaces */
 nav ul li a:active {
-  background-color: #fff; /* Cambia el color de fondo al hacer clic */
-  color: #333;
+  background-color: #fff; /* Cambio de color de fondo al hacer clic */
+  color: #333; /* Cambio de color de texto al hacer clic */
 }
 
 a {
-  text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
-  color: #fff; /* Color del texto blanco para los enlaces */
-  font-weight: bold; /* Texto en negrita */
+  text-decoration: none; /* Quitar subrayado */
+  color: #fff; /* Color de texto */
+  font-weight: bold; /* Negrita */
 }
 
 /* Sección Principal */
 section {
-  padding: 20px; /* Espaciado interno de la sección */
-  margin-bottom: 50px; /* Agrega un margen inferior de 20px */
+  padding: 20px; /* Espaciado interno */
+  margin-bottom: 50px; /* Margen inferior */
 }
 
 section h2 {
-  font-size: 2em;
+  font-size: 2em; /* Tamaño de fuente */
 }
 
 section p {
-  font-size: 1.2em;
+  font-size: 1.2em; /* Tamaño de fuente */
 }
 
 /* Pie de Página */
 footer {
   position: fixed; /* Fijar el pie de página */
-  bottom: 0; /* Alinearlo en la parte inferior */
-  left: 0; /* Alinearlo en el extremo izquierdo */
+  bottom: 0; /* Alinear en la parte inferior */
+  left: 0; /* Alinear en el extremo izquierdo */
   width: 100%; /* Ancho completo */
-  background-color: #333; /* Color de fondo negro */
-  color: #fff; /* Texto blanco */
-  text-align: center;
-  padding: 10px; /* Espaciado interno del pie de página */
+  background-color: #333; /* Color de fondo */
+  color: #fff; /* Color de texto */
+  text-align: center; /* Alineación de texto */
+  padding: 10px; /* Espaciado interno */
+  box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1); /* Sombra */
 }
 
 .center {
-  text-align: center; /* Centra el texto */
+  text-align: center; /* Centrar el texto */
 }
 
 /* Estilo base para las imágenes */
 .centered-image {
-  display: block;
-  margin: 0 auto;
-  width: 800px;
-  height: 500px;
+  display: block; /* Define el elemento como un bloque */
+  margin: 0 auto; /* Centra horizontalmente el elemento */
+  width: 800px; /* Establece el ancho del elemento en 800px */
+  height: 500px; /* Establece la altura del elemento en 500px */
   transition: transform 0.6s ease; /* Transición suave para la transformación al girar */
   border-radius: 50px; /* Especifica el radio de las esquinas redondeadas */
 }
 
 /* Efecto hover para las imágenes */
 .centered-image:hover {
-  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+  transform: scale(1.1); /* Escala */
 }
 
-/* Efecto de clic para las imágenes */
+/* Efecto clic para las imágenes */
 .centered-image.clicked {
-  transform: rotateY(180deg); /* Gira horizontalmente la imagen */
+  transform: rotateY(180deg); /* Giro horizontal */
 }
 
-/* Efecto de clic para girar de vuelta */
+/* Efecto clic para volver a girar */
 .centered-image.clicked:hover {
   transform: rotateY(
     0deg
-  ); /*Gira horizontalmente la imagen de vuelta a su posición original  */
+  ); /* Giro horizontal de vuelta a su posición original */
 }
