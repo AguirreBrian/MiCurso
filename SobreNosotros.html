@@ -10,6 +10,10 @@
     <!-- Título que se muestra en la pestaña del navegador -->
     <link rel="stylesheet" href="css/style.css" />
     <!-- Enlace a una hoja de estilo externa -->
+    <!-- <link rel="icon" href="img/Icono.ico" type="image/x-icon"> -->
+    <!-- Link para mostrar el icono de nuestra pagina de tipo ico -->
+    <link rel="icon" href="img/Icono.png" type="image/png" />
+    <!-- Link para mostrar el icono de nuestra pagina de tipo png -->
   </head>
   <body>
     <header>
@@ -17,23 +21,25 @@
       <h1>Sobre Nosotros</h1>
       <!-- Título principal de la página -->
     </header>
-    <nav>
-      <!-- Menú de navegación -->
-      <ul>
-        <li><a href="Index.html">Inicio</a></li>
-        <li><a href="SobreNosotros.html">Sobre Nosotros</a></li>
-        <li><a href="#contacto">Contacto</a></li>
-      </ul>
-    </nav>
+    <nav id="nav"></nav>
     <section>
       <!-- Sección principal de contenido -->
       <h2 class="center">Hola</h2>
       <p class="center">Este es un párrafo de ejemplo.</p>
     </section>
 
-    <footer>
-      <!-- Pie de página con información adicional o enlaces de contacto -->
-      <p>&copy; 2024 Nombre de la Página. Todos los derechos reservados.</p>
-    </footer>
+    <footer id="footer"></footer>
   </body>
 </html>
+
+<script>
+  // Cargar el encabezado
+  fetch("nav.html")
+    .then((response) => response.text())
+    .then((html) => (document.getElementById("nav").innerHTML = html));
+
+  // Cargar el pie de página
+  fetch("footer.html")
+    .then((response) => response.text())
+    .then((html) => (document.getElementById("footer").innerHTML = html));
+</script>

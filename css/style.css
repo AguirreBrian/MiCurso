@@ -11,7 +11,7 @@ ul {
 /* Estilos Generales */
 body {
   padding-top: 140px; /* Añadir espacio arriba igual a la altura del encabezado y la barra de navegación */
-  font-family: "Arial", sans-serif;
+  font-family: "Open Sans", sans-serif;
   line-height: 1.6;
   color: #333;
 }
@@ -110,10 +110,29 @@ footer {
   text-align: center; /* Centra el texto */
 }
 
+/* Estilo base para las imágenes */
 .centered-image {
-  display: block; /* Convierte la imagen en un bloque */
-  margin: 0 auto; /* Centra horizontalmente */
-  width: 800px; /* Ancho específico */
-  height: 500px; /* Alto específico */
-  object-fit: cover; /* Escalar la imagen para llenar su contenedor manteniendo la proporción */
+  display: block;
+  margin: 0 auto;
+  width: 800px;
+  height: 500px;
+  transition: transform 0.6s ease; /* Transición suave para la transformación al girar */
+  border-radius: 50px; /* Especifica el radio de las esquinas redondeadas */
+}
+
+/* Efecto hover para las imágenes */
+.centered-image:hover {
+  transform: scale(1.1); /* Escala la imagen al 110% de su tamaño original */
+}
+
+/* Efecto de clic para las imágenes */
+.centered-image.clicked {
+  transform: rotateY(180deg); /* Gira horizontalmente la imagen */
+}
+
+/* Efecto de clic para girar de vuelta */
+.centered-image.clicked:hover {
+  transform: rotateY(
+    0deg
+  ); /*Gira horizontalmente la imagen de vuelta a su posición original  */
 }
