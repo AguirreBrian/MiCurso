@@ -1,0 +1,119 @@
+/* Reset de Estilos para una mejor consistencia entre navegadores */
+body,
+h1,
+h2,
+p,
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* Estilos Generales */
+body {
+  padding-top: 140px; /* Añadir espacio arriba igual a la altura del encabezado y la barra de navegación */
+  font-family: "Arial", sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* Encabezado */
+header {
+  position: fixed; /* Fijar el encabezado */
+  top: 0; /* Alinearlo en la parte superior */
+  left: 0; /* Alinearlo en el extremo izquierdo */
+  width: 100%; /* Ancho completo */
+  background-color: #4caf50; /* Color de fondo verde oscuro */
+  color: #fff; /* Texto blanco */
+  padding: 20px; /* Espaciado interno */
+  text-align: center;
+}
+header h1 {
+  font-size: 2em; /* Tamaño de fuente más grande para el título principal */
+  transition: font-size 0.3s; /* Transición suave de tamaño de fuente */
+}
+
+/* Efecto hover para el h1 dentro del header */
+header h1:hover {
+  font-size: 2.2em; /* Cambia el tamaño de fuente en hover */
+}
+
+/* Navegación */
+nav {
+  position: fixed; /* Fijar la barra de navegación */
+  top: 91px; /* Alinearla debajo del encabezado */
+  left: 0; /* Alinearla en el extremo izquierdo */
+  width: 100%; /* Ancho completo */
+  background-color: #333; /* Color de fondo negro */
+}
+
+ul {
+  list-style: none; /* Quita los puntos de la lista */
+  padding: 10px; /* Espaciado interno de la lista */
+}
+
+/* Estilos para los enlaces dentro de los elementos li en el nav */
+nav ul li {
+  display: inline-block; /* Convertir en línea en bloque para alinear horizontalmente */
+}
+
+nav ul li a {
+  display: block; /* Convertir enlace en bloque para ocupar todo el espacio del li */
+  padding: 10px; /* Añadir relleno alrededor del enlace */
+  text-decoration: none; /* Quita el subrayado predeterminado de los enlaces */
+  color: #fff; /* Color del texto */
+}
+
+/* Estilos cuando el mouse pasa sobre un enlace */
+nav ul li a:hover {
+  background-color: #555; /* Cambia el color de fondo al pasar el mouse */
+}
+
+/* Estilos cuando se hace clic en un enlace */
+nav ul li a:active {
+  background-color: #fff; /* Cambia el color de fondo al hacer clic */
+  color: #333;
+}
+
+a {
+  text-decoration: none; /* Quita la subrayado predeterminado de los enlaces */
+  color: #fff; /* Color del texto blanco para los enlaces */
+  font-weight: bold; /* Texto en negrita */
+}
+
+/* Sección Principal */
+section {
+  padding: 20px; /* Espaciado interno de la sección */
+  margin-bottom: 50px; /* Agrega un margen inferior de 20px */
+}
+
+section h2 {
+  font-size: 2em;
+}
+
+section p {
+  font-size: 1.2em;
+}
+
+/* Pie de Página */
+footer {
+  position: fixed; /* Fijar el pie de página */
+  bottom: 0; /* Alinearlo en la parte inferior */
+  left: 0; /* Alinearlo en el extremo izquierdo */
+  width: 100%; /* Ancho completo */
+  background-color: #333; /* Color de fondo negro */
+  color: #fff; /* Texto blanco */
+  text-align: center;
+  padding: 10px; /* Espaciado interno del pie de página */
+}
+
+.center {
+  text-align: center; /* Centra el texto */
+}
+
+.centered-image {
+  display: block; /* Convierte la imagen en un bloque */
+  margin: 0 auto; /* Centra horizontalmente */
+  width: 800px; /* Ancho específico */
+  height: 500px; /* Alto específico */
+  object-fit: cover; /* Escalar la imagen para llenar su contenedor manteniendo la proporción */
+}
